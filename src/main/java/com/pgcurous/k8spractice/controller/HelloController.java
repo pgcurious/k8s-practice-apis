@@ -16,6 +16,7 @@ public class HelloController {
     @GetMapping("/kubernetes")
     public Kubernetes kubernetes () {
         log.info("Test started");
+        System.out.println("Log testing with sysout");
         Kubernetes kubernetes = new Kubernetes();
         kubernetes.setName("k8s-practice");
         kubernetes.setCloud("GCP");
